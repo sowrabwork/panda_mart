@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary flax">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img src="panda-commerce/logo.png" alt=""
@@ -36,10 +36,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">shoes</a>
+                <a class="nav-link" href="#shoes">shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">backpack</a>
+                <a class="nav-link" href="#backpack">backpack</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">contact us</a>
@@ -61,76 +61,222 @@
       </nav>
     </div>
 
-    <div class="container ">
-        <div id="carouselExampleAutoplaying" class="carousel slide pink-bg" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-8">
+    <div class="container">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide pink-bg"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-8">
                 <h1>Lorem ipsum dolor</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur incidunt architecto eius maiores quas!</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  consequuntur incidunt architecto eius maiores quas!
+                </p>
                 <h1 class="price">$423</h1>
                 <button class="buy-now-button">buy now</button>
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="panda-commerce/banner-images/headphone.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
-            <div class="col-md-4">
-                   <img src="panda-commerce/banner-images/headphone.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-8 align-items-center">
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-8 align-items-center">
                 <h1>Lorem ipsum dolor</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur incidunt architecto eius maiores quas!</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  consequuntur incidunt architecto eius maiores quas!
+                </p>
                 <h1 class="price">$423</h1>
                 <button class="buy-now-button">buy now</button>
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="panda-commerce/banner-images/tv.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
-            <div class="col-md-4">
-                   <img src="panda-commerce/banner-images/tv.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-8 align-items-center">
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-8 align-items-center">
                 <h1>Lorem ipsum dolor</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur incidunt architecto eius maiores quas!</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  consequuntur incidunt architecto eius maiores quas!
+                </p>
                 <h1 class="price">$423</h1>
                 <button class="buy-now-button">buy now</button>
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="panda-commerce/banner-images/xbox.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
-            <div class="col-md-4">
-                   <img src="panda-commerce/banner-images/xbox.png" class="d-block w-100" alt="...">
-            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-    
+
+    <div class="catagory container row">
+      <div class="item item1 col-md-3 d-flex justify-content-between align-items-center">
+        <h1>shoes</h1>
+        <img src="panda-commerce/categories/shoes.png" alt="" />
+      </div>
+      <div class="item item2 col-md-3 d-flex justify-content-between align-items-center">
+        <h1>bag</h1>
+        <img src="panda-commerce/categories/bag.png" alt="" />
+      </div>
+      <div class="item item3 col-md-3 d-flex justify-content-between align-items-center">
+        <h1>watch</h1>
+        <img src="panda-commerce/categories/watch.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container cards">
+        <h1 id="shoes">Shoes</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="panda-commerce/shoes/shoe-1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">nike easy 360</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.his is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <h3>$435</h3>
+              <button class="buy-now-button">buy now</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="panda-commerce/shoes/shoe-2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">nike air force 7</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <h3>$355</h3>
+              <button class="buy-now-button">buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="panda-commerce/shoes/shoe-3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">nike air max</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+              <h3>$450</h3>
+              <button class="buy-now-button">buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container cards">
+        <h1 id="backpack">bagpack</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="panda-commerce/bags/bag-3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">black bag</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <button class="buy-now-button">buy now</button>
+      </div>
+    </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div class="col">
+    <div class="card h-100">
+      <img src="panda-commerce/bags/bag-1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">red bag</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <button class="buy-now-button">buy now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="panda-commerce/bags/bag-2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">blue bag</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <button class="buy-now-button">buy now</button>
+      </div>
+    </div>
+  </div>
 </div>
     </div>
 
 
-    <div class="catagory container d-flex justify-content-around ">
-        <div class="item item1 col-md-3 d-flex justify-content-between">
-            <h1>shoes</h1>
-            <img src="panda-commerce/categories/shoes.png" alt="">
-        </div>
-        <div class="item item2 col-md-3 d-flex justify-content-between">
-            <h1>bag</h1>
-            <img src="panda-commerce/categories/bag.png" alt="">
-        </div>
-        <div class="item3 item col-md-3 d-flex justify-content-between">
-            <h1>watch</h1>
-            <img src="panda-commerce/categories/watch.png" alt="">
+    <div class="container pink-bg d-flex justify-content-center align-items-center sub">
+        <div>
+            <h3>STAY IN TOUCH</h3>
+            <p>get update on sell special and more</p>
+            <input type="text">
+            <button class="buy-now-button">submit</button>
         </div>
     </div>
+
+    <footer>
+        <small>
+            @copyright halum-vhulum. All rights are preserved.
+        </small>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
